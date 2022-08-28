@@ -17,7 +17,7 @@ public class LookControl : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         Cursor.lockState = CursorLockMode.Locked; //Lock cursor to screen
         float mouseX = Input.GetAxisRaw("Mouse X") * mouseSensitivity * Time.deltaTime; // these variables are essentially getting how much we *want* to move the 
